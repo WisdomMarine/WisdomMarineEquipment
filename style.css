@@ -1,0 +1,124 @@
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: black;
+        }
+        .Heading {
+            font-size: 50px;
+            color: white;
+            font-weight: 900;
+        }
+        .head {
+            background-color: #0D1B2A; 
+            height: 100px;
+            display: flex;
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            right: 0;
+            left: 0;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            transition: top 1s;
+        }
+        .head.hide {
+            top: -100px; 
+        }
+        .navigation {
+            display: flex;
+            gap: 25px;
+        }
+
+        .navigation a {
+            font-size: 20px;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 12px;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 5px;
+        }
+
+        .navigation a:hover {
+            background-color: #1B263B; 
+            color: #FFD700;
+        }
+        .content{
+            margin-left: 150px;
+            margin-right: 150px;
+
+            margin-top: 120px;
+            z-index: 10px;
+            color: white;
+        }
+        .img_div{
+            position: relative;
+            width: 100%;
+            max-width: auto;
+            height: 500px;
+            background-image: url(Galene_ship.jpg);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.7;
+        }
+        .main_img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+        }
+        .main_img p{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .items{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .items div{
+            width: 100%;
+            height: 350px;
+            border-radius: 10px;
+            transition: 1s;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            height: 200px;
+            padding: 20px;
+        }
+        .item-block {
+            display: flex;
+            height: 350px;
+            background-color: black;
+            border-radius: 10px;
+        }
+
+        .item-block img {
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px; 
+        }
+
+        .item-text {
+            padding: 30px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .items div:hover{
+            width: 100%;
+            height: 500px;
+            transition: 1s;
+            background-color:black;
+        }
